@@ -1,6 +1,15 @@
 #include <GUIConstantsEx.au3>
 #include <WindowsConstants.au3>
 
+; Executar o comando curl para baixar o arquivo LISTA_ESTADO.txt
+RunWait(@ComSpec & ' /c curl -g -k -L -# -o "' & @TempDir & '\LISTA_ESTADO.txt" "https://raw.githubusercontent.com/cyal203/INSTALADORES/refs/heads/main/LISTA_ESTADO.txt" >nul 2>&1', "", @SW_HIDE)
+
+; Verificar se o arquivo foi baixado corretamente
+If Not FileExists(@TempDir & "\LISTA_ESTADO.txt") Then
+    MsgBox(16, "Erro", "Não foi possível baixar o arquivo LISTA_ESTADO.txt.")
+    Exit
+EndIf
+
 GUICreate("Fenox Intalador", 280, 200)
 
 ; Lista de Estados
@@ -38,7 +47,8 @@ EndFunc
 
 ; Função para buscar a versão do estado
 Func ObterVersaoEstado($estado)
-    Local $file = FileOpen("C:\\LISTA_ESTADO.txt", 0)
+	
+    Local $file = FileOpen(@TempDir & "\LISTA_ESTADO.txt", 0)
     If $file = -1 Then Return "N/A"
 
     While 1
