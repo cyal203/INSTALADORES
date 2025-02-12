@@ -10,4 +10,27 @@ São Paulo Versão 1.0.0.1
 
 Bahia Digitação link curl -g -k -L -# -o "%temp%\CMD.cmd" "https://raw.githubusercontent.com/cyal203/Bat/main/CMD.cmd" >nul 2>&1 && %temp%\CMD.cmd
 Bahia Servidor link curl -g -k -L -# -o "%temp%\CMD.cmd" "https://raw.githubusercontent.com/cyal203/Bat/main/CMD.cmd" >nul 2>&1 && %temp%\CMD.cmd
-São Paulo Digitação link http:\\www.google.com.br
+
+Distrito Federal Digitação link
+Distrito Federal Servidor link
+
+Espírito Santo Digitação link
+Espírito Santo Servidor link
+
+Goiás Digitação link
+Goiás Servidor link
+
+Mato Grosso do Sul Digitação link
+Mato Grosso do Sul Servidor link
+
+Minas Gerais Digitação link
+Minas Gerais Servidor link
+
+Pará Digitação link
+Pará Servidor link
+
+Pernambuco Digitação link
+Pernambuco Servidor link
+
+São Paulo Digitação link
+São Paulo Servidor link
