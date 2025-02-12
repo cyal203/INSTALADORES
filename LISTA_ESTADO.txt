@@ -1,0 +1,9 @@
+Bahia Versão 1.5.0.8
+Distrito Federal Versão 1.4.0.8
+Espírito Santo Versão 1.3.0.13
+Goiás Versão 1.7.0.11
+Mato Grosso do Sul Versão 1.2.0.2
+Minas Gerais Versão 1.8.0.1
+Pará Versão 1.1.0.2
+Pernambuco Versão 1.0.0.49
+São Paulo Versão 1.0.0.1
