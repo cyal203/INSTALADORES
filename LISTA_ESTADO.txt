@@ -7,3 +7,4 @@ Minas Gerais Versão 1.8.0.1
 Pará Versão 1.1.0.2
 Pernambuco Versão 1.0.0.49
 São Paulo Versão 1.0.0.1
+2
