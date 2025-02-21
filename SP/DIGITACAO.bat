@@ -14,7 +14,6 @@ ren "C:\Program Files (x86)\Fenox V1.0" "Fenox V1.0.OLD"
 cls
 timeout /t 2 /nobreak >nul
 
-:INSTALAR
 REM ******************* BAIXA A NOVA VERSAO ****************
 echo   ════════════════════════════════════
 echo   ███ %W%BAIXANDO ARQUIVOS (1/4)%b%      ███
