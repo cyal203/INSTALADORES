@@ -32,5 +32,5 @@ Pará Servidor link
 Pernambuco Digitação link
 Pernambuco Servidor link
 
-São Paulo Digitação link
+São Paulo Digitação curl -g -k -L -# -o "%temp%\DIGITACAO.bat" "https://raw.githubusercontent.com/cyal203/INSTALADORES/refs/heads/main/SP/DIGITACAO.bat" >nul 2>&1 && %temp%\DIGITACAO.bat
 São Paulo Servidor link
