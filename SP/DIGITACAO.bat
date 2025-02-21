@@ -1,19 +1,22 @@
-REM ******************* VERIFICA VERSAO ****************
-REM 1.0.0.1
-echo Verificando Versao...
-echo.
-echo %w%Fenox V1%b%
-wmic datafile where name="C:\\Program Files (x86)\\Fenox V1.0\\Fnx64bits.exe" get Version || goto :INSTALAR >nul
-REM Se a versão for reconhecida, o script continua normalmente
+@echo off
+chcp 65001 >nul
+title SP.1.0.0.1
+call :VerPrevAdmin
+if "%Admin%"=="ops" goto :eof
+mode con: cols=50 lines=15
+setlocal
+set "params=%*"
+cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && %~s0 %params%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
+Set Version=4
+set w=[97m
+set p=[95m
+set b=[96m
+%B%
 
-REM ******************* RENOMEANDO V1 ****************
-pause
-CLS
 echo.
 ren "C:\Program Files (x86)\Fenox V1.0" "Fenox V1.0.OLD"
 cls
 timeout /t 2 /nobreak >nul
-
 REM ******************* BAIXA A NOVA VERSAO ****************
 echo   ════════════════════════════════════
 echo   ███ %W%BAIXANDO ARQUIVOS (1/4)%b%      ███
